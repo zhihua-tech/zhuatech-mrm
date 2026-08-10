@@ -83,3 +83,7 @@ cd frontend && npm install && npm run dev
 仓库只使用虚构演示数据。请勿提交客户素材、未发布活动、个人信息、商业合同、访问令牌或生产凭据；协作与安全要求见 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [SECURITY.md](SECURITY.md)。
 
 关键词：知华科技 MRM、营销资源管理系统、营销预算管理、内容资产管理、营销活动管理、Java MRM、Spring Boot 营销平台、Vue 管理系统、上海软件开发。
+
+## 营销活动产能评估
+
+新增 `POST /api/mrm/insights/campaign-capacity`，综合可用工时、已承诺工作、新活动需求、关键技能、供应商确认和上线时间，输出 `READY`、`REBALANCE` 或 `DEFER`。
