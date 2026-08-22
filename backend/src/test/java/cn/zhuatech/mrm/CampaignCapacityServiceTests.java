@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.mrm;
 import cn.zhuatech.mrm.service.CampaignCapacityService;import org.junit.jupiter.api.Test;import static org.junit.jupiter.api.Assertions.*;
 class CampaignCapacityServiceTests {private final CampaignCapacityService service=new CampaignCapacityService();
