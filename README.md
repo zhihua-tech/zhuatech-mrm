@@ -87,3 +87,7 @@ cd frontend && npm install && npm run dev
 ## 营销活动产能评估
 
 新增 `POST /api/mrm/insights/campaign-capacity`，综合可用工时、已承诺工作、新活动需求、关键技能、供应商确认和上线时间，输出 `READY`、`REBALANCE` 或 `DEFER`。
+
+## 企业级营销活动发布治理
+
+新增 `POST /api/enterprise/mrm/campaign-release`，覆盖简报、预算、品牌、法务、隐私、素材、追踪与回退计划，返回 `PUBLISH / REVIEW / BLOCKED`。详见 [活动发布说明](docs/ENTERPRISE_CAMPAIGN_RELEASE.md)。
