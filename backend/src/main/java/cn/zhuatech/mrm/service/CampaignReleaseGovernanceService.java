@@ -6,8 +6,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class CampaignReleaseGovernanceService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Assessment assess(Request request) {
         List<String> blockers = new ArrayList<>();
         List<String> actions = new ArrayList<>();
@@ -29,12 +35,21 @@ public class CampaignReleaseGovernanceService {
         actions.add("批准活动上线并保存审批、资产和追踪快照");
         return new Assessment(Decision.PUBLISH, blockers, actions);
     }
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String campaignCode, boolean briefApproved,
                           boolean budgetReserved, boolean brandReviewPassed,
                           boolean legalReviewRequired, boolean legalApproved,
                           boolean personalDataUsed, boolean consentBasisVerified,
                           boolean assetsFinalized, boolean trackingPlanVerified,
                           boolean rollbackPlanReady) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Assessment(Decision decision, List<String> blockers, List<String> actions) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public enum Decision { PUBLISH, REVIEW, BLOCKED }
 }
